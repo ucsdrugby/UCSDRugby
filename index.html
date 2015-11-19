@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="UCSD Rugby">
+        <meta name="author" content="Pierre Karpov">
+        <link rel="icon" href="./img/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="./css/main.css" rel="stylesheet">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/support.css" rel="stylesheet">
+        
+        <!-- Font Awesome icons-->
+        <link rel="stylesheet" href="./css/font-awesome-4.2.0/css/font-awesome.min.css">
+        
+        <!-- Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic' rel='stylesheet' type='text/css'>
+        <title>UCSD Rugby</title>
+    </head>
+    <body>
+        <!-- TOP NAV BAR -->
+        <nav class="navbar navbar-default" id="main_nav_bar" role="navigation">
+            <div class="container-fluid">
+                <!-- bg color: style="background-color: #435AA8;" -->
+                <div id="top_nav_top_row" class="row clearfix">
+                    <a class="navbar-nav"  id="top_nav_logo_text" href="./index.html">
+                        <img id="top_nav_logo" style="vertical-align:middle;" src="./img/ucsdLogoTransBig.gif" alt="Home"/>UCSD Rugby</a>
+
+                    <div class="pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav_links_top active" href="./schedule.html">Schedule</a></li> 
+                            <li><a class="nav_links_top" href="./news.html">News</a></li>
+                            <li><a class="nav_links_top" href="./team.html">Team</a></li>
+                            <li><a class="nav_links_top" href="./contact.html">Contact</a></li>
+                            <li><a class="nav_links_top" target="_blank" href="http://www.active.com/donate/ucsdrugby">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- BREADCRUMB -->
+        <!-- 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm=12">
+                    <ol id="breadcrsumb_bar" class="breadcrumb">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li class="active">Roster</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <!-- MAIN DIV -->
+        <div id="main_div" class="container-fluid">
+            <div class="row">
+                <!-- LEFT COL -->
+                <div class="col-sm-3">
+                    <!-- NEXT FIXTURE -->
+                    <div class="panel panel-default transparent_panel">
+                        <div class="panel-heading panel_header_custom">
+                            NEXT FIXTURE
+                        </div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <h1>SD Armada</h1>
+                                    <div class="col-sm-9"> 
+                                        <div class="row">
+                                            <h4>Nov. 21st</h4>
+                                        </div>
+                                        <div class="row">
+                                            <h4>@Dusty Rhodes</h4>
+                                        </div>
+                                    </div>
+                                    <div id="fixuture_team_logo_top" class="col-sm-3">
+                                        <img src="./img/armadaLogo.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STANDINGS -->
+                    <div class="panel panel-default transparent_panel">
+                        <div class="panel-heading panel_header_custom">2016 LEAGUE STANDINGS</div>
+                        <!-- Table -->
+                        <table class="table">
+                            <tr>
+                                <th>Team</th>
+                                <th class="standings_points">Pts</th>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/ucsdLogoTransSmall.gif"/>UCSD</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/Claremont.png"/>Claremont</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/APU.png"/>Azura Pacific</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/CLU.png"/>Cal Lutheran</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/UCR.png"/>UCR</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/Pepperdine.png"/>Pepperdine</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="standings_team_icon" src="./img/CSUN.png"/>CSUN</td>
+                                <td class="standings_points">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- MAIN COL -->
+                <div class="col-sm-6">
+                    <!-- CAROUSEL-->
+                    <div class="row">
+                        <div id="carousel_home_page" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel_home_page" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="1"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="2"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="3"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="4"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="5"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="6"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="7"></li>
+                                <li data-target="#carousel_home_page" data-slide-to="8"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides --> <!-- TODO: put dope imgaes -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="#">
+                                        <img src="./img/carousel_img_1.png" alt="">
+                                        <h3 class="carousel-caption">
+                                            
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_2.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_3.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_4.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="./img/carousel_img_5.png" alt="">
+                                        <h3 class="carousel-caption">
+                                            
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_6.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_7.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_8.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/carousel_img_9.png" alt="">
+                                    <h3 class="carousel-caption">
+                                        
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel_home_page" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel_home_page" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div> <!-- End of carousel--> 
+                        
+                        <div  class="panel panel-default transparent_panel" id="lead_article_home_page">
+                            <div class="panel-body">
+                                <h1>SD City Tournament <small>November 7, 2015</small></h1>
+                                <p id="lead_article_p"><img class="lead_article_img_container" src="./img/sd_tournament_team_picture.jpg"/>UCSD rugby took on some tough opposition at the San Diego City Championship at the little Q arena, home of the OMBAC rugby team. The Tritons played San Diego State’s A and B teams, Point Loma Nazarene University and University of San Diego in an action packed Saturday. UCSD finished the day with three defeats and one win, but performed well against upper division level teams.<br/><br/>
+UCSD opened the day with their B team against SDSU’s B team. With a lot of new faces on their team, UCSD fared well against a tough opponent. UCSD’s B team had a couple of nice breaks, but was missing the experience necessary to conclude their actions. The Tritons had a strong showing in the first game of the tournament but ultimately fell to SDSU B.<br/><br/>
+In the second game, UCSD A had its best game of the fall season, thrashing SDSU’s A team by five tries to one. UCSD started off with a couple of sloppy plays, but retained the ball effectively and got a first try of a quick ball to the left of the field by Saun Martinez, after a nice quick ball play by Jonathan Reyes and George McMahon. UCSD pounced the ball into the end-zone one more time after a quick tap of a penalty led to a breakaway try from Pierre Karpov. Coming into halftime with a two tries lead, UCSD had to make some changes due to several injuries. The Tritons kept the same intensity in the second half however, scoring three more tries. The two first one were scored by standout Noah Lee, who zigzagged the defense for the first one and cut back inside to score another one from 20 meters out. The third one was scored on a class action by the Tritons who went weak-side to sneak one in. SDSU scored one back before the end of the game, but UCSD dominated and left the pitch victorious. <br/><br/>
+After a two hour layoff, UCSD was back on the field against PLNU. The Tritons suffered from the injuries that occurred earlier and PLNU’s energy proved too much for the UCSD. A lot of newcomers had a good run with the designated B side of the Tritons, who defended valiantly but lacked the discipline to defeat the Sea Lions. In the last game of the day, a banged up UCSD A side was no match for USD’s speed. The Tritons got lazy on defense and USD took the gaps, to score several times and get away with the win.<br/><br/>
+<img class="lead_article_img_container" src="./img/sd_tournament_mvps.jpg"/>
+The two rookies of the day for UCSD were Christian Espinoza and David Zhai. After sitting out with an injury after the first game of the season, Christian was a bright spot with his defense on the wings. He was credited with a few big tackles and a couple of nice runs, providing a spark on both sides of the ball. David was a force in the forward pack, providing good ball skills on offense and solid fringe defense on the defensive side.<br/><br/>
+UCSD gets a week off to rest and heal injuries before going out to play the Armada in the last game of the preseason in two weeks. With preseason over, the Tritons will then look ahead to the UC tournament and the beginning of their regular season in January. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT COL -->
+                <div class="col-sm-3">
+                    <div class="panel panel-default transparent_panel">
+                        <div class="panel-heading panel_header_custom">CONTACT US</div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="contact_div row">
+                                    <div class="row contact_title"><h4><strong>Head Coach</strong></h4></div>
+                                    <div class="col-sm-3 contact_pic_container">
+                                        <img class="contact_pic" src="./img/kennedy_pic.png"/>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="row contact_name">Brian Kennedy</div>
+                                        <div class="row contact_email"><a href="mailto:kennedy@ucsdrugby.com">kennedy@ucsdrugby.com</a></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="contact_div row">
+                                    <div class="row contact_title"><h4><strong>Club President</strong></h4></div>
+                                    <div class="col-sm-3 contact_pic_container">
+                                        <img class="contact_pic" src="./img/carlos_pic.png"/>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="row contact_name">Carlos Munoz</div>
+                                        <div class="row contact_email"><a href="mailto:carlosmunoz94@gmail.com">carlosmunoz94@gmail.com</a></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="contact_div row">
+                                    <div class="row contact_title"><h4><strong>Recruiting Captain</strong></h4></div>
+                                    <div class="col-sm-3 contact_pic_container">
+                                        <img class="contact_pic" src="./img/judah_pic.png"/>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="row contact_name">Judah Word</div>
+                                        <div class="row contact_email"><a href="mailto:judahw0@gmail.com">judahw0@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default transparent_panel">
+                        <div class="panel-heading panel_header_custom">MEET US</div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="row">Warren field
+                                </div>
+                                <div class="row"><small>Mon/Wed, 6:00 pm to 8:00 pm</small>
+                                </div>
+                                <div class="row">
+                                    <!--<img src="./img/map.png" id="map_img"/>-->
+                                    <iframe width="250" height="200" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=Warren+Field,+Voigt+Drive,+La+Jolla,+CA,+United+States&key=AIzaSyDX2gKhzatdN5cWy50T5VkdsTJZK_wyHus" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div id="footer" class="container-fluid">
+            <div class="row" id="footer_links"><a href="mailto:carlosmunoz94@gmail.com">Want to sponsor us?</a>   |   <a href="http://gccir.com/GCCIR/">GCCIR</a>   |   <a href="http://www.usarugby.org">USA Rugby</a>   |   <a href="http://www.ucsd.edu">UCSD</a>   |   <a href="http://sportsclubs.ucsd.edu/sports/teams/rugbyw/">Triton Women</a> </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>About us</h3>
+                    <p>University of California, San Diego Men’s Rugby is a community of student athletes that share a common passion, rugby. We thrive to reach our goals through our hard work and commitment to success. All levels are welcome, so do not hesitate to contact us!</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Media</h3>
+                    <div id="social_media_div" class="col-sm-12"> <!-- TODO: link to social media -->
+                        <a href="https://www.facebook.com/ucsdmenrugby?fref=ts">
+                            <i class="fa fa-facebook-square fa-5x"></i>
+                        </a>
+                        <a href="https://twitter.com/ucsdmenrugby">
+                            <i class="fa fa-twitter-square fa-5x"></i>
+                        </a>
+                        <a href="mailto:carlosmunoz94@gmail.com">
+                            <i class="fa fa-envelope fa-5x"></i>
+                        </a>
+                        <a href="https://instagram.com/ucsdmenrugby/">
+                            <i class="fa fa-instagram fa-5x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Next game</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8"> 
+                                <h2>SD Armada</h2>
+                                <h4>Nov. 21st</h4>
+                                <h4>@Dusty Rhodes</h4>
+                            </div>
+                            <div id="fixuture_team_logo_bot" class="col-sm-4">
+                                <img id="fixuture_team_logo_bot"  src="./img/armadaLogo.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- BOT NAV BAR -->
+                <nav class="navbar navbar-default" id="bot_nav_bar" role="navigation">
+                    <div class="container-fluid">
+                        <!-- bg color: style="background-color: #435AA8;" -->
+                        <div id="bot_nav_top_row" class="row clearfix">
+                            <div class="pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="./schedule.html">Schedule</a></li> 
+                                    <li><a href="./news.html">News</a></li>
+                                    <li><a href="./team.html">Team</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a target="_blank" href="http://www.active.com/donate/ucsdrugby">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+    </body>
+</html>

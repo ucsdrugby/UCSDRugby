@@ -1,0 +1,220 @@
+.nav_links_top {
+    font-family: 'Roboto', sans-serif;
+    color: #FFD100 !important;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.nav_links_top:hover {
+    color: #FFB300 !important;
+}
+
+
+#top_nav_logo_text {
+    font-family: 'Roboto', sans-serif;
+    color: #FFD100 !important;
+    font-size: 34px;
+    font-weight: 1200;
+}
+
+#top_nav_logo_text:hover {
+    text-decoration: none;
+    color: #FFB300 !important;
+}
+
+#breadcrumb_bar {
+    margin-bottom: 0px;
+}
+
+#main_nav_bar {
+    border: none;
+    margin: 0px;
+}
+
+#top_nav_top_row {
+    padding: 5px;
+    background-color: #435AA8;
+}
+
+#top_nav_logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    overflow: hidden;
+}
+
+#main_div {
+    margin: 0px;
+    padding-top: 20px;
+    background-color: #FAE15A ;
+}
+
+#fixuture_team_logo_top {
+    padding: 0px;
+}
+
+#fixuture_team_logo_top img{
+    height: 60px;
+    width: auto;
+    float: right;
+    overflow: hidden;
+}
+
+.standings_points {
+    text-align: right;
+}
+
+.standings_team_icon {
+    height: 25px;
+    width: auto;
+    float: left;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.contact_div {
+    padding: 0px 10px 25px 10px;
+}
+
+.contact_pic_container {
+    padding: 0px !important;
+}
+.contact_pic{
+    overflow: hidden;
+    height: 50px;
+    width: auto;
+    padding-left: 0px !important;
+}
+
+.contact_name {
+    font-size: 18px;
+}
+
+.contact_email {
+    font-size: 15px;
+}
+
+#map_img {
+    width: 250px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    margin: 0px;
+    padding-right: 15px;
+}
+
+
+#lead_article_home_page {
+    margin-top: 20px;
+}
+
+
+#lead_article_home_page h1 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.lead_article_img_container {
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+    float: right;
+    margin: 10px;
+}
+
+#lead_article_p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer {
+    background-color: #435AA8;
+}
+
+#footer h3 {
+    color: #FFD100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 5px
+}
+
+#footer p {
+    color: #FFD100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    
+}
+
+#footer_links {
+    background-color: #92A1D3;
+    padding: 2px 5px 2px 5px;
+}
+
+#footer_links a {
+    color: #FFD100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#footer_links a:hover {
+    color: #FFB300;
+    text-decoration: none !important;
+}
+
+#social_media_div {
+    padding-left: 50px;
+}
+
+#social_media_div i {
+    margin: 5px;
+    color: #FFD100;
+}
+
+#social_media_div i:hover {
+    color: #FFB300;
+    text-decoration: none !important;
+}
+
+#bot_nav_bar {
+    margin-bottom: 0px;
+    border: none;
+    background-color: #92A1D3;
+}
+
+#bot_nav_top_row {
+    padding: 0px;
+    background-color: #92A1D3;
+}
+
+#bot_nav_top_row a {
+    padding: 10px;
+}
+
+#fixuture_team_logo_bot {
+    padding: 0px;
+}
+
+#fixuture_team_logo_bot img {
+    height: 100px;
+    width: auto;
+    float: right;
+    overflow: hidden;
+}
+
+.transparent_panel {
+    background-color:rgba(255,255,255,0.8) !important;
+}
+
+.panel_header_custom {
+    background-color: #92A1D3 !important;
+    font-family: 'Roboto', sans-serif;
+    color: #FFD100 !important;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}

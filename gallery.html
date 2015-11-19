@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="UCSD Rugby">
+        <meta name="author" content="Pierre Karpov">
+        <link rel="icon" href="./img/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="./css/main.css" rel="stylesheet">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/support.css" rel="stylesheet">
+        
+        <!-- Font Awesome icons-->
+        <link rel="stylesheet" href="./css/font-awesome-4.2.0/css/font-awesome.min.css">
+        
+        <!-- Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic' rel='stylesheet' type='text/css'>
+        <title>UCSD Rugby</title>
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        
+        
+        <!-- Gellery plugin-->
+        <script type="text/javascript" src="./js/flipgallery/settings.js"></script>
+        <script type="text/javascript" src="./js/flipgallery/flipgallery.min.js"></script>
+    </head>
+    <body onLoad="flipGallery()">
+        <!-- TOP NAV BAR -->
+        <nav class="navbar navbar-default" id="main_nav_bar" role="navigation">
+            <div class="container-fluid">
+                <!-- bg color: style="background-color: #435AA8;" -->
+                <div id="top_nav_top_row" class="row clearfix">
+                    <a class="navbar-nav"  id="top_nav_logo_text" href="./index.html">
+                        <img id="top_nav_logo" style="vertical-align:middle;" src="./img/ucsdLogoTransBig.gif" alt="Home"/>UCSD Rugby</a>
+
+                    <div class="pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav_links_top active" href="./schedule.html">Schedule</a></li> 
+                            <li><a class="nav_links_top" href="./news.html">News</a></li>
+                            <li><a class="nav_links_top" href="./team.html">Team</a></li>
+                            <li><a class="nav_links_top" href="./contact.html">Contact</a></li>
+                            <li><a class="nav_links_top" target="_blank" href="http://www.active.com/donate/ucsdrugby">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- BREADCRUMB -->
+        <!-- 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm=12">
+                    <ol id="breadcrsumb_bar" class="breadcrumb">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li class="active">Roster</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <!-- MAIN DIV -->
+        <div id="main_div" class="container-fluid">
+            <div class="row">
+                <!-- LEFT COL -->
+                <div class="col-sm-2">
+                    <!-- NEXT FIXTURE -->
+                    <div class="panel panel-default transparent_panel">
+                        <div class="panel-heading panel_header_custom">
+                            NEWS
+                        </div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <a id="new_tab_blogs" onclick="NewsTabClicked('blogs');" style="color: #FFD100;">Blogs</a>
+                                </div>
+                                <div class="row">
+                                    <a id="new_tab_game_reports" onclick="NewsTabClicked('game_reports');">Game reports</a>
+                                </div>
+                                <div class="row">
+                                    <a id="new_tab_gallery" onclick="NewsTabClicked('gallery');">Galery</a>
+                                </div>
+                                <div class="row">
+                                    <a id="new_tab_history" onclick="NewsTabClicked('history');">History</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN COL -->
+                <div class="col-sm-10">
+                    <div id="flipGallery"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div id="footer" class="container-fluid">
+            <div class="row" id="footer_links"><a href="http://www.bigmarco.net">Big Marco Bail Bonds</a>   |   <a href="http://gccir.com/GCCIR/">GCCIR</a>   |   <a href="http://www.usarugby.org">USA Rugby</a>   |   <a href="http://www.ucsd.edu">UCSD</a>   |   <a href="http://sportsclubs.ucsd.edu/sports/teams/rugbyw/">Triton Women</a> </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>About us</h3>
+                    <p>USC Men's Rugby aspires to be one of the premier collegiate rugby programs in the nation. We’re building a strong, high scoring, professional style, PAC 12 competitive team, are we’re looking for motivated incoming and current USC students to join us. </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Media</h3>
+                    <div id="social_media_div" class="col-sm-12"> <!-- TODO: link to social media -->
+                        <a href="https://www.facebook.com/ucsdmenrugby?fref=ts">
+                            <i class="fa fa-facebook-square fa-5x"></i>
+                        </a>
+                        <i class="fa fa-twitter-square fa-5x"></i>
+                        <i class="fa fa-envelope fa-5x"></i>
+                        <i class="fa fa-instagram fa-5x"></i>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Next game</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8"> 
+                                <h2>USD vs UCSD</h2>
+                                <h4>Oct. 10th</h4>
+                                <h4>@USD <small>Manchester Field</small></h4>
+                            </div>
+                            <div id="fixuture_team_logo_bot" class="col-sm-4">
+                                <img id="fixuture_team_logo_bot"  src="./img/San-Diego.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- BOT NAV BAR -->
+                <nav class="navbar navbar-default" id="bot_nav_bar" role="navigation">
+                    <div class="container-fluid">
+                        <!-- bg color: style="background-color: #435AA8;" -->
+                        <div id="bot_nav_top_row" class="row clearfix">
+                            <div class="pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="./schedule.html">Schedule</a></li> 
+                                    <li><a href="./news.html">News</a></li>
+                                    <li><a href="./team.html">Team</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a target="_blank" href="http://www.active.com/donate/ucsdrugby">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+    </body>
+</html>

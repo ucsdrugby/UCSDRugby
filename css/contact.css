@@ -1,0 +1,29 @@
+#contact_map {
+    margin-bottom: 15px;
+}
+
+#contact_map img {
+    width: 590px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+
+#contact_how_to_join p {
+    font-size: 20px;
+}
+
+#contact_how_to_join img {
+    height: 200px;
+    width: auto;
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+}
+
+#contact_right_col img {
+    width: 265px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}

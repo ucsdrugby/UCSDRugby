@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="UCSD Rugby">
+        <meta name="author" content="Pierre Karpov">
+        <link rel="icon" href="./img/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="./css/main.css" rel="stylesheet">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/news.css" rel="stylesheet">
+        
+        <!-- Font Awesome icons-->
+        <link rel="stylesheet" href="./css/font-awesome-4.2.0/css/font-awesome.min.css">
+        
+        <!-- Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic' rel='stylesheet' type='text/css'>
+        <title>UCSD Rugby</title>
+        
+        
+        <!-- Scrips -->
+        <script type="text/javascript">
+
+        
+            function NewsTabClicked(clickedTab) {
+                var clickedDiv = $("#news_" + clickedTab);
+                
+                var blogsDiv = $("#news_blogs");
+                var gameResultsDiv = $("#news_game_reports");
+                var galleryDiv = $("#news_gallery");
+                var historyDiv = $("#news_history");
+                
+                blogsDiv.css("display", "none");
+                gameResultsDiv.css("display", "none");
+                galleryDiv.css("display", "none");
+                historyDiv.css("display", "none");
+                
+                clickedDiv.css("display", "inline");
+                
+                var clickedTab = $("#new_tab_" + clickedTab);
+                
+                var blogsTabDiv = $("#new_tab_blogs");
+                var gameResultsTabDiv = $("#new_tab_game_reports");
+                var galleryTabDiv = $("#new_tab_gallery");
+                var historyTabDiv = $("#new_tab_history");
+                
+                blogsTabDiv.css("color", "#428BCA");
+                gameResultsTabDiv.css("color", "#428BCA");
+                galleryTabDiv.css("color", "#428BCA");
+                historyTabDiv.css("color", "#428BCA");
+                
+                clickedTab.css("color", "#FFD100");
+            };
+
+        </script>
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        
+        
+        <!-- Gellery plugin-->
+        <script type="text/javascript" src="./js/flipgallery/settings.js"></script>
+        <script type="text/javascript" src="./js/flipgallery/flipgallery.min.js"></script>
+    </head>
+    <body onLoad="flipGallery()">
+        <!-- TOP NAV BAR -->
+        <nav class="navbar navbar-default" id="main_nav_bar" role="navigation">
+            <div class="container-fluid">
+                <!-- bg color: style="background-color: #435AA8;" -->
+                <div id="top_nav_top_row" class="row clearfix">
+                    <a class="navbar-nav"  id="top_nav_logo_text" href="./index.html">
+                        <img id="top_nav_logo" style="vertical-align:middle;" src="./img/ucsdLogoTransBig.gif" alt="Home"/>UCSD Rugby</a>
+
+                    <div class="pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav_links_top active" href="./schedule.html">Schedule</a></li> 
+                            <li><a class="nav_links_top" href="./news.html">News</a></li>
+                            <li><a class="nav_links_top" href="./team.html">Team</a></li>
+                            <li><a class="nav_links_top" href="./contact.html">Contact</a></li>
+                            <li><a class="nav_links_top" target="_blank" href="http://www.active.com/donate/ucsdrugby">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- BREADCRUMB -->
+        
+        <div class="container-fluid">
+            <div class="row" style="height: 36px;">
+                <div class="col-sm=12">
+                    <ol id="breadcrsumb_bar" class="breadcrumb">
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active">News</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MAIN DIV -->
+        <div id="main_div" class="container-fluid">
+            <div class="row">
+                <!-- LEFT COL -->
+                <div class="col-sm-2">
+                    <!-- NEXT FIXTURE -->
+                    <div class="panel panel-default transparent_panel">
+                        <div class="panel-heading panel_header_custom">
+                            NEWS
+                        </div>
+                        <div class="panel-body">
+                            <div class="container-fluid" id="news_tabs">
+                                <div class="row">
+                                    <a id="new_tab_blogs" onclick="NewsTabClicked('blogs');" style="color: #FFD100;">Blogs</a>
+                                </div>
+                                <div class="row">
+                                    <a id="new_tab_game_reports" onclick="NewsTabClicked('game_reports');">Game reports</a>
+                                </div>
+                                <div class="row">
+                                    <a id="new_tab_gallery" onclick="NewsTabClicked('gallery');">Gallery</a>
+                                </div>
+                                <div class="row">
+                                    <a id="new_tab_history" onclick="NewsTabClicked('history');">History</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN COL -->
+                <div class="col-sm-10">
+                    <!-- BLOGS -->
+                    <div id="news_blogs">
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_blogs_blog">
+                                <h1>Fall annoucements <small>Monday, September 14, 2015</small></h1>
+                                <p><img src="./img/gallery_images/lb_tournament/lb9.jpg"/><strong>First Practice:</strong>
+<br/>
+When: September 27, 2015 @ 12:00pm-2;00pm
+<br/>
+Where: Warren Field
+<br/><br/>
+<strong>Regular Practice Schedule</strong>
+<br/>
+When: Monday and Wednesday @ 6:00pm-8:00pm
+<br/>
+Where: Warren Field
+<br/><br/>
+<strong>Brain Kennedy ( Head Coach)</strong>: Kennedy@ucsdrugby.com
+<br/>
+<strong>Judah Word ( Recruiting Captain )</strong>: Judahw0@gmail.com
+<br/><br/>
+Follow us on all our social media platforms for the latest news and up-
+dates (Facebook, Twitter, and Instagram) and check us out at ucsdrugby.com</p>
+                            </div>
+                        </div>
+                        
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_blogs_blog">
+                                <h1>Welcome! <small>Tuesday, September 8, 2015</small></h1>
+                                <p><img src="./img/lead_article_img.png"/>Welcome to University of California, San Diego Men's Rugby website. This website is dedicated to provide news, updates, and photos about the team to our fans. Thank you and feel free to visit every corners of our site. 
+<br/><br/>
+We are constantly recruiting motivated students of all levels to battle along side us as we compete against some of the top teams around. Follow us on all our social media platforms for live game updates. 
+<br/><br/>
+Cheers!
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_blogs_blog">
+                                <h1>League opener Friday night <small>Wednesday, December 10, 2014</small></h1>
+                                <p>
+The Tritons begin 2015 GCCIR play Friday, January 30th, at local rival Universitry of San Diego. Kickoff is 8:00 p.m. at USD. The teams met in the City Championship in November, with USD edging UCSD 5-3. 
+<br/><br/>
+The home opener is the following weekend. The Tritons host USC on Saturday, February 7th, at 1:00 p.m.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END BLOGS-->
+                    
+                    <!-- GAME REPORTS -->
+                    <div id="news_game_reports" style="display: none;">
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>Men's Rugby at SD City Championship<small>Saturday, November 7, 2015</small></h1>
+                                <p><img src="./img/sd_tournament_team_picture.jpg"/>UCSD rugby took on some tough opposition at the San Diego City Championship at the little Q arena, home of the OMBAC rugby team. The Tritons played San Diego State’s A and B teams, Point Loma Nazarene University and University of San Diego in an action packed Saturday. UCSD finished the day with three defeats and one win, but performed well against upper division level teams.<br/><br/>
+UCSD opened the day with their B team against SDSU’s B team. With a lot of new faces on their team, UCSD fared well against a tough opponent. UCSD’s B team had a couple of nice breaks, but was missing the experience necessary to conclude their actions. The Tritons had a strong showing in the first game of the tournament but ultimately fell to SDSU B.<br/><br/>
+In the second game, UCSD A had its best game of the fall season, thrashing SDSU’s A team by five tries to one. UCSD started off with a couple of sloppy plays, but retained the ball effectively and got a first try of a quick ball to the left of the field by Saun Martinez, after a nice quick ball play by Jonathan Reyes and George McMahon. UCSD pounced the ball into the end-zone one more time after a quick tap of a penalty led to a breakaway try from Pierre Karpov. Coming into halftime with a two tries lead, UCSD had to make some changes due to several injuries. The Tritons kept the same intensity in the second half however, scoring three more tries. The two first one were scored by standout Noah Lee, who zigzagged the defense for the first one and cut back inside to score another one from 20 meters out. The third one was scored on a class action by the Tritons who went weak-side to sneak one in. SDSU scored one back before the end of the game, but UCSD dominated and left the pitch victorious. <br/><br/>
+After a two hour layoff, UCSD was back on the field against PLNU. The Tritons suffered from the injuries that occurred earlier and PLNU’s energy proved too much for the UCSD. A lot of newcomers had a good run with the designated B side of the Tritons, who defended valiantly but lacked the discipline to defeat the Sea Lions. In the last game of the day, a banged up UCSD A side was no match for USD’s speed. The Tritons got lazy on defense and USD took the gaps, to score several times and get away with the win.<br/><br/>
+                                    <img src="./img/sd_tournament_mvps.jpg"/>
+The two rookies of the day for UCSD were Christian Espinoza and David Zhai. After sitting out with an injury after the first game of the season, Christian was a bright spot with his defense on the wings. He was credited with a few big tackles and a couple of nice runs, providing a spark on both sides of the ball. David was a force in the forward pack, providing good ball skills on offense and solid fringe defense on the defensive side.<br/><br/>
+UCSD gets a week off to rest and heal injuries before going out to play the Armada in the last game of the preseason in two weeks. With preseason over, the Tritons will then look ahead to the UC tournament and the beginning of their regular season in January.  </p>
+                            </div>
+                        </div>
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>Men's Rugby at PLNU<small>Saturday, October 31, 2015</small></h1>
+                                <p><img src="./img/plnu_team.JPG"/>After hosting the University of Sydney on Wednesday and attracting a crowd to Warren Field for their only home game of the preseason, UCSD Rugby was back on the road at Ocean Beach to play Point Loma University. The Tritons showed up with a thin squad but battled hard, ultimately going down by the slimmest of margins to PLMU after four quarters of 20 minutes.<br/><br/> 
+The day started off badly for the Tritons who lost three players after barely 10 minutes of play. UCSD would not let this drag them down however and continued to battle hard during the first quarter, which ended on a score of one try to two in favor of PLNU. The second quarter was as shaky as the first, but was highlighted by some nice runs from rookies George McMahon and Eric Golant as well as a beautiful 50 meter solo try by Pierre Karpov. UCSD leveled the score at the end of the second quarter and picked up the intensity for the following 40 minutes. 
+Everything got together for the final 40 minutes as UCSD started exploiting what PLNU was giving them with more efficiency and played together as a team. The defense made stops, despite allowing PLNU to score on some inattention errors. On offense, the progress made since the beginning of the preseason was visible and led to scores from Damon and Noah Lee to close out the game, on a beautiful run that saw the rookie get past half the PLNU defense to score the try. At the end of the day, UCSD showed up with intensity and determination to battle their rivals from San Diego but ultimately fell by one try to PLNU.<br/><br/>
+<img src="./img/plnu_mvps.jpg"/>
+ The two players of the game were Lewis Langi for the forwards and Max Pregoni for the backs. Lewis was one of the most active forwards for the Tritons, tackling and rucking on seemingly every play. He got out of the scrums quickly and put pressure on the opposing scrum-half and fly-half. Max got into the game in the second half and got his first meaningful minutes on the wing. He was credited with a few nice tackles and provided speed on the edge for an increasingly tired Triton team.<br/><br/>
+UCSD is back on the field next weekend at the San Diego City Championship where they will face City Rivals PLNU, San Diego State University and University of San Diego at the little Q field.</p>
+                            </div>
+                        </div>
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>Men's Rugby at UCSC Tourney <small>Saturday, October 24, 2015</small></h1>
+                                <p><img src="./img/ucsc_team_picture.jpg"/>The UCSD Men’s Rugby team drove up north to take on some top tier Division I NorCal opposition at the annual UCSC Rugby Tournament. The only SoCal representatives, the Tritons played well in their three games on Sunday and got meaningful playing time in for those who made the long road trip.<br/><br/>
+UCSD opened up the day with a game against the UCSC Slugs, the tournament’s hosts. With a few players out of position and a good mix of new guys mixed in with veterans, the Tritons held their own against a DI powerhouse. Despite suffering in set pieces and being deprived of good attacking opportunities, UCSD fared well and mounted a terrific goal line defense early in the first half. Some of the issues were corrected in the second half, and even though they did not score a try, the Tritons matched the Slugs’ intensity in the last 20 minutes and held UCSC to three tries on the day.<br/><br/>
+After a long layoff in between the first and second games, UCSD was back in action against Santa Clara. After working on their rucking in between the two games, UCSD came out aggressively and improved their ball retaining skills. With cleaner balls, the Tritons launched some good offensives against another good team and put pressure on the opposing defense. UCSD was held in check by Santa Clara, but their improvements held some promise for their last game. <br/><br/>
+Against arguably their toughest opponents of the day, Humboldt State, a diminished Tritons team showed heart and spirit, making the Lumberjacks work for every points they could get. The tired Tritons were no match for Humboldt’s speed, but UCSD put up great efforts to prevent the Lumberjacks from scoring tries, stuffing them before the goal line a couple of times. The thin Triton squad received help from a few UCSC players, in a display of tremendous sportsmanship and a true showing of rugby spirit.<br/><br/>
+<img src="./img/ucsc_mvps.jpg"/>The Tritons of the day were Wilf Dunne for the forwards, rewarded for his leadership on the defensive side and his continuous rucking and tackling. On the back line, Sean Martinez was recognized. The rookie held his own against some tough competition and played the whole three games for the Tritons, getting meaningful playing time and experience on the wing.<br/><br/>
+UCSD is back at it this week, hosting the University of Sidney for a joint practice on Monday and a game on Wednesday night at Warren Field at 7, before going to downtown San Diego to play Point Loma University on Saturday. </p>
+                            </div>
+                        </div>
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>Men's Rugby at USD <small>Saturday, October 10, 2015</small></h1>
+                                <p><img src="./img/UCSD@USD.jpg"/>This Saturday was our first game of the season, and for many, their first game of rugby. 
+
+It was under the scorching Californian sun that we fought against the USD’s Toreros. 
+
+USD is historically known to be better than UCSD at rugby, but despite having mainly 
+
+rookies on our team, we made the Toreros work hard for their win.
+
+Even if about a third of our players never played rugby before, they applied the little that 
+
+they were taught within two weeks of training. Very few penalties were called and 
+
+everyone played hard.<br/><br/>
+
+The rewarded back and forward of the game were Noah Lee and George McMahon. 
+
+Noah ran several great strike lines and broke through USD’s defense to score our first 
+
+try. And George played with an impressive intensity putting the Toreros on their heels 
+
+after every run.  Another notable player from this match was Pierre Karpov completing 
+
+an impressive try from deep in our own 22. Pierre with great awareness initial kicked the 
+
+ball over the entire USD defense and successfully chased the ball giving one finally kick 
+
+to reach the Toreros try line where Pierre dove onto the ball for the score.<img src="./img/USDMVPs.png"/><br/><br/>
+
+Our performance was, of course, very far from perfect and this is why our practices are 
+
+now focused on correcting the recurrent errors that were noticed during the game. We 
+
+are currently working hard on adjusting our defense and setting up a counter attack, and 
+
+we hope to apply that next weekend against Point Loma Nazarene University.</p>
+                            </div>
+                        </div>
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>Men's Rugby at Santa Barabara <small>Saturday, March 14, 2015</small></h1>
+                                <p><img src="./img/gallery_images/lb_tournament/lb16.jpg"/>Saturday was another rugby day for the Tritons and one of their last as they wind down their season. The day began early when the team met up to load the vans in preparation for a long drive to Santa Barbara Community College. A quick burrito stop along the way got the Tritons fueled and ready for battle.
+<br/><br/>
+Upon arrival in early afternoon Sandman, first time van driver, finally found his way into a parking space and the Tritons took to the blistering hot field. Despite the loss that day the team was able to walk away with a vision for the future. Strengths and weaknesses were taken note of and the Tritons plan for improvement moving forward. The next game, and the last of the season, should be an exciting one to say the least so be sure to stop by Warren Field for another Triton rugby day.</p>
+                            </div>
+                        </div>
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>Men’s Rugby at Long Beach <small>Sunday, March 8, 2015</small></h1>
+                                <p><img src="./img/gallery_images/lb_tournament/lb14.jpg"/>Following a defeat to CSU Fullerton, UC San Diego Men’s Rugby team looked upon to redeem itself against the Long Beach State. Despite the early efforts by the UC San Diego to score a try, Long Beach State overpowered the Tritons by power running to the goal line. The extra points only strengthened their lead.
+<br/><br/>
+Long Beach State’s lead was established early. A couple of missed tackles by UC San Diego players only favored Long Beach State. Despite beautiful passes by Captains Steven McCloskey and Isaias Bustos, and defense by Judah Word, UC San Diego fell to Long Beach State at their home field.
+<br/><br/>
+Only notable injury of the game was sustained by Brandon Ong, a fly half for UC San Diego, who injured his shoulder stopping a run by an opposing player. Despite the tough lost to a rival, UC San Diego Men’s Rugby team looks to end its losing streak and get redemption against Santa Barbara CC on March 14th.</p>
+                            </div>
+                        </div>
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_game_reports_report">
+                                <h1>UCLA Tournament January 17th-18th <small>Saturday, January 17, 2015</small></h1>
+                                <p><img src="./img/gallery_images/uc_tournament/uc8.JPG"/>The UC San Diego Men’s Rugby Team took a road trip to UCLA this weekend for the 10th Annual Dennis Storer Classic - “All Cal” Tournament. The Tritons played three matches on Saturday and one on Sunday. All matches were two 20 minute halves. Our first match was the second of the morning against host UCLA. A hard fought first half between both teams’ A-sides led to three Bruin tries to our one. The Triton back-line showed some flare early as center Andrew Dries scored the first try of the match off of a pass from Co-Captain Isaias Bustos. 12 substitutions were made at half time to get many newer players experience against a strong Bruin team. Late in the second half, wing Manny Martinez picks up his first try of the tournament. Final score: UCLA 31, UCSD 10.
+<br/><br/>
+After a short break, the Tritons took on UC Riverside. The Tritons showed strength in their drives down the field, but came up short on two critical goal line situations. Jacob Buck showed his sideline speed scoring the only try of the match, but it was not enough to stop three big breaks from Riverside. Final score: Riverside 19, UCSD 7.
+<br/><br/>
+<img src="./img/gallery_images/uc_tournament/uc13.JPG"/>In our last match on Saturday, the Tritons took on UCSC. Due to inexperience and fatigue on the Triton side, the Banana Slugs found holes in the Triton’s defensive line which led to four breakaway scores. Final score: UCSC 28, UCSD 0.
+<br/><br/>
+After a good night’s rest, the Tritons came out ready for their Sunday match versus UC Davis. Although UC San Diego was outsized by the Aggies, they put up a strong fight. Defensively, the Tritons did not let up big plays, and offensively, the Tritons drove down the field with consistency. In the second half, Manny Martinez scored on a chip kick from flyhalf Brandon Ong. On the previous play, hooker Khalil Kanbar had a strong forward ball which set up a mismatch on the wide side of the field. The score was Martinez’s second of the tournament and 6th of the preseason. In the end, the Aggies proved they were a dominant team as the match ended 36-5.
+<br/><br/>
+On a team with roughly half of its players being rookies, the Tritons are eager to continue learning and working on their mistakes in the next two weeks. Their next game is the first of the regular season at USD on January 30th at 8:00pm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END GAME REPORTS -->
+                    
+                    <!-- GALLERY -->
+                    <div id="news_gallery" style="display: none;">
+                        <div id="flipGallery"></div>
+                    </div>
+                    <!-- END GALLERY -->
+                    
+                    <!-- HISTORY -->
+                    <div id="news_history" style="display: none;">
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_history_article">
+                                <h1>Team history</h1>
+                                <p><img src="./img/gallery_images/social/social2.jpg"/>UCSD Rugby has a long and colorful history. Founded in 1966, the club is one of the oldest sports on campus.  The general attitude of the 1960's and early '70's fostered a perfect source of recruits for the counter culture of rugby. These early years of the "rebel sport" gave way to serious, competitive play in the mid 1970's. In 1975, UCSD captured the Collegiate Championship of the Santa Barbara Tournament, the largest rugby fixture in the West. During this period, UCSD rugby alumnus Peter Sertic took over the head-coaching job and solidified the team with active recruiting, and routinely fielded two sides.<br/>
+The 1984-85 season brought a coaching change; Tom Butler built upon the foundation laid by Coach Sertic. In 1987 UCSD captured the first of three successive Southern California College division rugby championships. Butler also began the tradition of touring every year.<br/>
+The 1989-90 season was the first time the Tritons played in the University Division (DI), making rugby and water polo the only UCSD sports to compete in league play at the Division I level. That season, the Tritons had a respectable league record, and swept the University of San Diego and San Diego State to win the "Kings of the City" title.   In 1992, the Tritons toured overseas for the first time, playing in the Bahamas.  Two UCSD players received the honor of playing for the Bahamian national team. The team returned to the Caribbean the following year, touring Jamaica in 1993.<br/>
+Coach Butler retired following the 1992-93 season. Former assistant coach Mark Stenson took over, and along with Eric Takeuchi sought to continue UCSD's winning ways. Along the way Paul Reynolds and Tim O’Hara joined to help coach the forwards and backs, respectively. The Tritons were the Division II runners-up in 1996, and in 1997 won the Division II Southern California championship.<br/>
+The 1998 team captured the first ever Division II National Championship held by USA Rugby, beating the University of Oregon in the finals in Albany, NY. In the three games in three days format, the Tritons’ superior fitness and skills showed as they outscored their opponents 86-13.<br/>
+In 1999, former captain Troy Meyer joined the coaching staff.  The Tritons again dominated league play, and earned a shot to defend their title at the National Championship in Cincinnati.  UCSD won it all for a second straight season, coming from behind to beat Chico State in the finals, 21-18.  The 1999 squad also took the team’s first-ever European tour, traveling to Wales (the site of the Rugby World Cup later that year) during Spring Break.<br/>
+The Tritons opened the new millennium by moving up to compete in Division I.  They finished a very respectful 5-3 in their first year, narrowly missing a playoff birth.  In 2003, Stenson and Takeuchi stepped aside, and O’Hara and Reynolds took over the coaching duties.  Former player Dave Thomas joined the coaching staff in 2005 after returning to San Diego, and the Tritons continued to compete in the top level of collegiate rugby.<br/>
+O’Hara and Reynolds stepped down from coaching after the 2007 season.  Triton alum Brian Kennedy took over heading into the 2008 campaign.  Takeuchi came out of retirement to coach the backs, and Thomas stayed on to run the forwards.  After the 2008 season, SCRFU realigned the Collegiate Division.  Division One was reduced from ten teams to five, based on 2008 standings.  UCSD was among the five teams relegated, and returned to Division Two competition in 2009.  After that season, SCRFU again realligned, and UCSD was placed in Division Three. The Tritons finished in second place, their only loss by a three-point margin to league champion CSU Fullerton.<br/>
+Based on their strong 2010 performance, the Tritons moved back to Division Two for the 2011 season.  As USA Rugby continued to realign the divisions, UCSD moved into the new 1AA Division for the 2013 season.  Heading into 2014, UCSD is the newly formed Gold Coast Conference of Intercollegiate Rugby, a Socal D1AA conference.  The conference is new, but UCSD faces old foes, including Claremont, Long Beach, Fullerton, and local rival USD.</p>
+                            </div>
+                        </div>
+                        
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_history_article">
+                                <h1>Team honors</h1>
+                                <!-- Table -->
+                                <table class="table">
+                                    <tr>
+                                        <th colspan="2">League Titles</th>
+                                    </tr>
+                                    <tr>
+                                        <td>USA RUGBY DIVISION TWO NATIONAL CHAMPIONS</td>
+                                        <td>1998, 1999</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Souther California RFU Collegiate Division Champions</td>
+                                        <td>1987,1988,1989, 1997,1998,1999</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Tournament Titles</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Santa Barbara (Gold)</td>
+                                        <td>1975</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Houston Invitational (Bowl)</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Heartland of America (Cup)</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Escondido 10's</td>
+                                        <td>1995</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Escondido 7's (Consolation)</td>
+                                        <td>2011</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Tours</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Bahamas</td>
+                                        <td>1992</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jamaica </td>
+                                        <td>1993</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wales</td>
+                                        <td>1999</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Tours Hosted</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Lanchester R.F.C.</td>
+                                        <td>1987</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Christ Church U-23</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <td>US Naval Academy</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Australian Colts</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Univ. of Canterbury</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Univ. of Kansas</td>
+                                        <td>1990</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waikato U-19</td>
+                                        <td>1991</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Siena R.F.C.</td>
+                                        <td>1991</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Catholic University</td>
+                                        <td>992,1996</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Buckinghampshire Univ</td>
+                                        <td>1998</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sandhurst Academy</td>
+                                        <td>2007</td>
+                                    </tr>
+                                    <tr>
+                                        <td>British Army Air Corps</td>
+                                        <td>2012</td>
+                                    </tr>
+                                    <tr>
+                                        <td>University of Queensland</td>
+                                        <td>2013</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div  class="panel panel-default transparent_panel">
+                            <div class="panel-body news_history_article">
+                                <h1>Individual honors</h1>
+                                <!-- Table -->
+                                <table class="table">
+                                    <tr>
+                                        <th colspan="2">All-Americans</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Eric Takeuchi</td>
+                                        <td>1992, 1993</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luke Armstrong</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brian Kennedy</td>
+                                        <td>2001</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">SCRFU Collegiate Griffins </th>
+                                    </tr>
+                                    <tr>
+                                        <td>John Tellenbach</td>
+                                        <td>1998,1999</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adam Lekoff</td>
+                                        <td>1990</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eric Takeuchi</td>
+                                        <td>1990,1991,1992</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark Bazzett</td>
+                                        <td>1996,1997</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dan Brislin</td>
+                                        <td>1996 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Andy Wilga</td>
+                                        <td>1997,1998,1999,2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chay Chang</td>
+                                        <td>1998 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Daren Garb</td>
+                                        <td>1998 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brian Kennedy</td>
+                                        <td>1999,2000,2001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luke Armstrong</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nik Cherwink</td>
+                                        <td>2007</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chad Allen</td>
+                                        <td>2008</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">PCRFU Collegiate Grizzlies</th>
+                                    </tr>
+                                    <tr>
+                                        <td>John Tellenbach</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eric Takeuchi</td>
+                                        <td>1991,1992</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">U-19 Griffins</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Luke Palmer</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dan Schmid</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mike Seike</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">U-19 Grizzlies</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Luke Palmer</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dan Schmid</td>
+                                        <td>1988</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Caps</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Tim Hay-Edie (Bahamas)</td>
+                                        <td>1992</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark Stenson (Bahamas)</td>
+                                        <td>1992</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paul Shattles (Norway)</td>
+                                        <td>1995,1996</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Lifetime Triton Award</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Devon Shea</td>
+                                        <td>1996</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Peter Sertic</td>
+                                        <td>1998</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">San Diego XV</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark Stenson</td>
+                                        <td>1991</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matt Cohen</td>
+                                        <td>1991</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">San Diego Collegiate XV</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Paul Shattles</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eric Takeuchi</td>
+                                        <td>1989</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END HISTORY -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div id="footer" class="container-fluid">
+            <div class="row" id="footer_links"><a href="mailto:carlosmunoz94@gmail.com">Want to sponsor us?</a>   |   <a href="http://gccir.com/GCCIR/">GCCIR</a>   |   <a href="http://www.usarugby.org">USA Rugby</a>   |   <a href="http://www.ucsd.edu">UCSD</a>   |   <a href="http://sportsclubs.ucsd.edu/sports/teams/rugbyw/">Triton Women</a> </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>About us</h3>
+                    <p>University of California, San Diego Men’s Rugby is a community of student athletes that share a common passion, rugby. We thrive to reach our goals through our hard work and commitment to success. All levels are welcome, so do not hesitate to contact us!</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Media</h3>
+                    <div id="social_media_div" class="col-sm-12"> <!-- TODO: link to social media -->
+                        <a href="https://www.facebook.com/ucsdmenrugby?fref=ts">
+                            <i class="fa fa-facebook-square fa-5x"></i>
+                        </a>
+                        <a href="https://twitter.com/ucsdmenrugby">
+                            <i class="fa fa-twitter-square fa-5x"></i>
+                        </a>
+                        <a href="mailto:carlosmunoz94@gmail.com">
+                            <i class="fa fa-envelope fa-5x"></i>
+                        </a>
+                        <a href="https://instagram.com/ucsdmenrugby/">
+                            <i class="fa fa-instagram fa-5x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Next game</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8"> 
+                                <h2>SD Armada</h2>
+                                <h4>Nov. 21st</h4>
+                                <h4>@Dusty Rhodes</h4>
+                            </div>
+                            <div id="fixuture_team_logo_bot" class="col-sm-4">
+                                <img id="fixuture_team_logo_bot"  src="./img/armadaLogo.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- BOT NAV BAR -->
+                <nav class="navbar navbar-default" id="bot_nav_bar" role="navigation">
+                    <div class="container-fluid">
+                        <!-- bg color: style="background-color: #435AA8;" -->
+                        <div id="bot_nav_top_row" class="row clearfix">
+                            <div class="pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="./schedule.html">Schedule</a></li> 
+                                    <li><a href="./news.html">News</a></li>
+                                    <li><a href="./team.html">Team</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a target="_blank" href="http://www.active.com/donate/ucsdrugby">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+    </body>
+</html>

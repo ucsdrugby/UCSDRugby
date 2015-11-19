@@ -1,0 +1,57 @@
+#schedule_next_fixture_team_logo {
+    padding: 0px;
+}
+
+#schedule_next_fixture_team_logo img{
+    height: 80px;
+    width: auto;
+    float: left;
+    overflow: hidden;
+}
+
+#schedule_next_fixture_map {
+    padding: 0px;
+}
+
+#schedule_next_fixture_map img{
+    height: 100px;
+    width: auto;
+    float: right;
+    overflow: hidden;
+}
+
+.schedule_team_logo {
+    padding: 0px;
+}
+
+.schedule_team_logo img {
+    height: 40px;
+    width: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.schedule_team_name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.schedule_team_name_small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.schedule_date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#schedule_right_col_img img {
+    width: 265px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
